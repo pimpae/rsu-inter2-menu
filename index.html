@@ -22,6 +22,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet"/>   
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />      
 		<style>
 			body{  
 				font-family: Sarabun;   
@@ -34,7 +35,7 @@
 				display: block;
 			} 
 			.nav-link-text{
-				font-size: 16px;
+				font-size: 14px;
 			}
 			.form-control{
 				font-size: 14px;
@@ -66,81 +67,20 @@
                                 </div>
                                 <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/card-backgrounds/cover-1-lg.png" class="cover" alt="cover">
                             </div>
-                            <ul id="js-nav-menu" class="nav-menu js-nav-built">      
-                                <li>
-                                    <a href="#">
-										<i class="far fa-user-graduate"></i>
-										<span class="nav-link-text">นักศึกษา</span>
-										<b class="collapse-sign">
-											<em class="fal fa-angle-up"></em>
-										</b>
-									</a>
-                                    <ul>
-                                        <li><a href="#" ><span class="nav-link-text">นักศึกษา Fulltime</span></a></li>
-                                        <li><a href="#" ><span class="nav-link-text">นักศึกษาแลกเปลี่ยน Outbound</span></a></li>
-                                        <li><a href="#" ><span class="nav-link-text">นักศึกษา Exchange</span></a></li> 
-                                    </ul>
-                                </li>      
+                            <ul id="js-nav-menu" class="nav-menu js-nav-built">       
                                 <li class="active">
                                     <a href="#">
 										<i class="far fa-users"></i>
-										<span class="nav-link-text">Agency</span>
+										<span class="nav-link-text">ทะเบียนประวัติ</span>
 										<b class="collapse-sign">
 											<em class="fal fa-angle-up"></em></b>
 										</a>
                                     <ul>
-                                        <li><a href="#" ><span class="nav-link-text">Agency List</span></a></li> 
-                                        <li class="active"><a href="#" ><span class="nav-link-text">Agency Performents</span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Agency Report</span></a></li>
-                                        <li><a href="#" ><span class="nav-link-text">Agency Payment</span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">บันทึกทะเบียนประวัติ</span></a></li> 
+                                        <li class="active"><a href="#" ><span class="nav-link-text">เปรียบเทียบประวัติบุคลากร</span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">ตั้งค่า</span></a></li> 
                                     </ul>
-                                </li>  
-                                <li>
-                                    <a href="#">
-										<i class="far fa-clinic-medical"></i>
-										<span class="nav-link-text">Insurance management</span>
-										<b class="collapse-sign">
-											<em class="fal fa-angle-up"></em>
-										</b>
-									</a>
-                                    <ul>
-                                        <li><a href="#" ><span class="nav-link-text">Import data </span></a></li>
-                                        <li><a href="#" ><span class="nav-link-text">Manage Insurance Policy number </span></a></li> 
-                                    </ul>
-                                </li>  
-                                <li>
-                                    <a href="#">
-										<i class="fal fa-file-alt"></i>
-										<span class="nav-link-text">การต่ออายุเอกสารนักศึกษา</span>
-										<b class="collapse-sign">
-											<em class="fal fa-angle-up"></em>
-										</b>
-									</a>
-                                    <ul>
-                                        <li><a href="#" ><span class="nav-link-text">Confirm Appointment </span></a></li>
-                                        <li><a href="#" ><span class="nav-link-text">Send Email To Student</span></a></li> 
-                                    </ul>
-                                </li> 
-                                <li>
-                                    <a href="#">
-										<i class="fal fa-cog"></i>
-										<span class="nav-link-text">กลุ่มเมนูตั้งค่า</span>
-										<b class="collapse-sign">
-											<em class="fal fa-angle-up"></em>
-										</b>
-									</a>
-                                    <ul>
-                                        <li><a href="#" ><span class="nav-link-text">Ranking Score and match study plan </span></a></li>
-                                        <li><a href="#" ><span class="nav-link-text">Hint message</span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Setting Pop up message at Support </span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Setup Tuition Fee </span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Setup Deposit </span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Setup Faculty </span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Deposit Package </span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">Setting Proforma invoice </span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">ผู้ใช้งาน</span></a></li>  
-                                    </ul>
-                                </li>  
+                                </li>    
 
 								
                             </ul>
@@ -177,309 +117,333 @@
 						<div class="container-fluid p-5"  >
 							<div class="row">
 								<div class="col-lg-12">
-									<h1> <i class="far fa-file-alt"></i> Agency Performents</h1>
-									<hr class="border-bottom">
-
+									<h1> <i class="far fa-users"></i> เปรียบเทียบประวัติบุคลากร</h1>
+									<hr class="border-bottom"> 
 									<form>
 										<div class="form-group row mb-0"> 
-											<div class="col">
-												<label for="">ปีการศึกษา</label>
-												<select name="" id="" class="form-control">
-													<option value="">ทั้งหมด</option>
-													<option value="">2566</option>
-													<option value="">2565</option>
-													<option value="">2564</option>
-													<option value="">2564</option>
-												</select>
-											</div>
-											<div class="col">
-												<label for="">ภาคการศึกษา</label>
-												<select name="" id="" class="form-control">
-													<option value="">ทั้งหมด</option>
-													<option value="">1</option>
-													<option value="">2</option>
-													<option value="">3</option>
-													<option value="">Summer</option>
-												</select>
-											</div>
-											<div class="col">
-												<label for="">คณะ</label>
-												<select name="" id="" class="form-control">
-													<option value="">ทั้งหมด</option>
-													<option value="">คณะวิทยาศาสตร์</option>
-													<option value="">คณะวิทยาศาสตร์</option>
-													<option value="">คณะวิทยาศาสตร์</option>
-													<option value="">คณะวิทยาศาสตร์</option>
-												</select>
-											</div>
-											<div class="col">
-												<label for="">วันที่</label>
-												<input type="text" class="form-control" placeholder="ตั้งแต่วันที่">
-											</div>
-											<div class="col">
-												<label for="">ถึง</label>
-												<input type="text" class="form-control" placeholder="ถึงวันที่">
-											</div>
-											<div class="col">
-												<label for="">รหัส/ชื่อนามสกุล</label>
-												<input type="text" class="form-control" placeholder="รหัส/ชื่อนามสกุล">
-											</div>
-											<div class="col">
-												<label for="">สถานะ</label>
-												<select name="" id="" class="form-control">
-													<option value="">ทั้งหมด</option>
-													<option value="">จ่ายเงินแล้ว</option>
-													<option value="">รอจ่ายเงิน</option> 
-												</select>
-											</div>
-											<div class="col pt-2">   
-												<br> 
-												<button class="btn btn-primary btn-sm  mr-1"  type="button"  >
-													<i class="far fa-search"></i>  
-												</button>    
-											</div>  
-										</div>
-										<div class="form-group row">  
-											<div class="col  ">   
-												<br> 
-												<button class="btn btn-outline-danger btn-sm mr-1"  type="button" title="Generate PDF">
-													<i class="far fa-file-pdf"></i> <span>Report PDF</span>
-												</button>   
-												<button class="btn btn-outline-success btn-sm mr-1"  type="button" title="Generate PDF">
-													<i class="far fa-file-excel"></i> <span>Report Excel</span>
-												</button>   
-												<button class="btn btn-outline-info btn-sm mr-1"  type="button" title="Generate PDF">
-													<i class="far fa-print"></i> <span>Print</span>
-												</button>  
-												<a href="#" class="btn btn-info btn-sm mr-1" data-toggle="modal" data-target="#myModal"><i class="far fa-file-import"></i> นำเข้า Payment</a>
-											</div>  
-										</div>
-									</form>
-		
-									<hr class="border-bottom">
-									
-			 
+											<div class="col-lg-2">
+												<label for="">บุคลากร </label>
+												<select name="" id="select1" class="form-control"> 
+													<option value="1">อัยการ 1</option>
+													<option value="2">อัยการ 2</option>
+													<option value="3">อัยการ 3</option>
+													<option value="4">อัยการ 4</option>
+													<option value="5">อัยการ 5</option> 
+													<option value="6">อัยการ 6</option> 
+												</select> 
+											</div> 
+										</div> 
+									</form> 
+									<hr class="border-bottom"> 
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-12">
-									
-									<div class="table-responsive">
-										<table class="table table-bordered" style="background-color: #fff;">
-											<thead>
-												<tr>
-													<th class="bg-danger text-white">#</th>
-													<th class="bg-danger text-white">รหัสนักศึกษา</th>
-													<th class="bg-danger text-white">ชื่อ-สกุล นักศึกษา</th>
-													<th class="bg-danger text-white text-center">วันที่สมัคร</th>
-													<th class="bg-danger text-white">เลขที่ผู้สม้คร</th>
-													<th class="bg-danger text-white">คณะ</th>
-													<th class="bg-danger text-white">ปีการศึกษา</th>
-													<th class="bg-danger text-white">ภาคการศึกษา</th>
-													<th class="bg-danger text-white">ชื่อ Agency </th>
-													<th class="bg-danger text-white">คอมมิชชั่น</th>
-													<th class="bg-danger text-white text-center">วันที่จ่าย</th>
-													<th class="bg-danger text-white text-center">Payment Status</th> 
-													<th class="bg-danger text-white text-center">
-														<i class="fal fa-file-alt"></i>
-													</th> 
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>1</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>2</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>3</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-danger text-center">รอจ่ายเงิน</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>4</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-danger text-center">รอจ่ายเงิน</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>5</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>6</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>7</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>8</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>9</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-												<tr>
-													<td>10</td>
-													<td>64039398012</td>
-													<td>สมใจ มาดี</td>
-													<td class="text-center">20/01/2566</td>
-													<td>00008271</td>
-													<td>วิทยาศาสตร์</td>
-													<td>2566</td>
-													<td>1</td>
-													<td>เอกชัย วงศ์ศรี</td>
-													<td>10,000.00</td>
-													<td class="text-center">20/01/2566</td>
-													<td class="text-success text-center">จ่ายเงินแล้ว</td>
-													<td class="text-center">
-														<a href="#" class="btn btn-info btn-sm ">
-															<i class="fal fa-file-alt"></i>
-														</a>
-													</td> 
-												</tr> 
-											</tbody>
-										</table>
+								<div class="col-lg-2"> 
+									<div class="list-name list-name1" style="display: none;">
+										<h4></h4><b>รายชื่อบุคลากร</b></h4>
+										<br>
+										<small>(เลือกได้สูงสุด 6 คน)</small>
+										<br><br>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name1">
+											<label class="custom-control-label" for="name1">กรรณณิกา ผลเจริญ	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name2">
+											<label class="custom-control-label" for="name2">คำนวณ วิสุทธิพิเนตร	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name3">
+											<label class="custom-control-label" for="name3">เชาว์ เต็มรักษ์	</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name4">
+											<label class="custom-control-label" for="name4">ทองใหม่ ทองสุก	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name5">
+											<label class="custom-control-label" for="name5">ปวิชยงค์ ทรงเหลี่ยม	</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name6">
+											<label class="custom-control-label" for="name6">วิมลวัลย์ วโรฬาร	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name7">
+											<label class="custom-control-label" for="name7">สุทิศา สุทิศา 	</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name8">
+											<label class="custom-control-label" for="name8">อดิศร ศรีสุธรรม</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name9">
+											<label class="custom-control-label" for="name9">อุมาพร แก้วสุข	
+											</label>
+										</div> 
 									</div>
-		
+									<div class="list-name list-name2" style="display: none;">
+										<h4></h4><b>รายชื่อบุคลากร</b></h4>
+										<br>
+										<small>(เลือกได้สูงสุด 6 คน)</small>
+										<br><br>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name21">
+											<label class="custom-control-label" for="name21">กรรณณิกา ผลเจริญ	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name22">
+											<label class="custom-control-label" for="name22">คำนวณ วิสุทธิพิเนตร	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name23">
+											<label class="custom-control-label" for="name23">เชาว์ เต็มรักษ์	</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name24">
+											<label class="custom-control-label" for="name24">ทองใหม่ ทองสุก	
+											</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name25">
+											<label class="custom-control-label" for="name25">ปวิชยงค์ ทรงเหลี่ยม	</label>
+										</div>
+										<div class="custom-control custom-checkbox my-1 mr-sm-2">
+											<input type="checkbox" class="custom-control-input" id="name26">
+											<label class="custom-control-label" for="name26">วิมลวัลย์ วโรฬาร	
+											</label>
+										</div> 
+									</div> 
+								</div>
+								<div class="col-lg-10">
+									<div class="row">
+										<div class="col name1" style="display: none;">
+											<div class="profile-box" >
+												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
+												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+												<h6>
+													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
+												</h6>
+												<h6>
+													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
+												</h6>
+												<h6>
+													<b>รหัสบุคลากร :</b> 4707068
+												</h6>
+												<h6>
+													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
+												</h6> 
+												<h5> <b>ประวัติการศึกษา</b> </h5>  
+												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+												<ol>
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+												</ol> 
+												<div class="row">
+													<div class="col">
+														<button class="btn btn-x btn-block active">เลือก</button>
+													</div>
+													<div class="col">
+														<button class="btn btn-x btn-block">ยกเลิก</button>
+													</div>
+												</div>
+											</div>
+										</div> 
+										<div class="col name2" style="display: none;">
+											<div class="profile-box">
+												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
+												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+												<h6>
+													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
+												</h6>
+												<h6>
+													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
+												</h6>
+												<h6>
+													<b>รหัสบุคลากร :</b> 4707068
+												</h6>
+												<h6>
+													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
+												</h6> 
+												<h5> <b>ประวัติการศึกษา</b> </h5>  
+												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+												<ol>
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+												</ol> 
+												<div class="row">
+													<div class="col">
+														<button class="btn btn-x btn-block active">เลือก</button>
+													</div>
+													<div class="col">
+														<button class="btn btn-x btn-block">ยกเลิก</button>
+													</div>
+												</div>
+											</div>
+										</div> 
+										<div class="col name3" style="display: none;">
+											<div class="profile-box">
+												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
+												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+												<h6>
+													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
+												</h6>
+												<h6>
+													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
+												</h6>
+												<h6>
+													<b>รหัสบุคลากร :</b> 4707068
+												</h6>
+												<h6>
+													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
+												</h6> 
+												<h5> <b>ประวัติการศึกษา</b> </h5>  
+												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+												<ol>
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+												</ol> 
+												<div class="row">
+													<div class="col">
+														<button class="btn btn-x btn-block active">เลือก</button>
+													</div>
+													<div class="col">
+														<button class="btn btn-x btn-block">ยกเลิก</button>
+													</div>
+												</div>
+											</div>
+										</div> 
+										<div class="col name4" style="display: none;">
+											<div class="profile-box">
+												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
+												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+												<h6>
+													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
+												</h6>
+												<h6>
+													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
+												</h6>
+												<h6>
+													<b>รหัสบุคลากร :</b> 4707068
+												</h6>
+												<h6>
+													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
+												</h6> 
+												<h5> <b>ประวัติการศึกษา</b> </h5>  
+												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+												<ol>
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+												</ol> 
+												<div class="row">
+													<div class="col">
+														<button class="btn btn-x btn-block active">เลือก</button>
+													</div>
+													<div class="col">
+														<button class="btn btn-x btn-block">ยกเลิก</button>
+													</div>
+												</div>
+											</div>
+										</div> 
+										<div class="col name5" style="display: none;">
+											<div class="profile-box">
+												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
+												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+												<h6>
+													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
+												</h6>
+												<h6>
+													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
+												</h6>
+												<h6>
+													<b>รหัสบุคลากร :</b> 4707068
+												</h6>
+												<h6>
+													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
+												</h6> 
+												<h5> <b>ประวัติการศึกษา</b> </h5>  
+												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+												<ul>
+													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+												</ul>
+												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+												<ol>
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+												</ol> 
+												<div class="row">
+													<div class="col">
+														<button class="btn btn-x btn-block active">เลือก</button>
+													</div>
+													<div class="col">
+														<button class="btn btn-x btn-block">ยกเลิก</button>
+													</div>
+												</div>
+											</div>
+										</div> 
+									</div>
 								</div>
 							</div>
 						</div>
@@ -487,150 +451,7 @@
                 </div>
             </div>
         </div>
- 
-		<div class="modal fade" id="myModal">
-			<div class="modal-dialog modal-dialog-centered modal-xl">
-				<div class="modal-content"> 
-					<div class="modal-header">
-						<h4 class="modal-title"><i class="far fa-file-import"></i>  นำเข้า Payment</h4>
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-					</div> 
-					<div class="modal-body">
-						<div class="col border p-4">
-							<div class="row">
-								<div class="col">
-									<h4><b>ดาวน์โหลด Template :  </b>
-										<button class="btn btn-outline-success btn-sm mr-1"  type="button" title="Generate PDF">
-											<i class="far fa-file-excel"></i><span> Excel Template</span>
-										</button> 
-									</h4>
-								</div>
-								<div class="col">
-									<h4><b>นำเข้า Payment :  </b>
-										<button class="btn btn-danger btn-sm mr-1 file-import"  type="button" title="Generate PDF">
-											<i class="far fa-file-import"></i> นำเข้า Excel </span>
-										</button> 
-									</h4>
-								</div>
-							</div>
-							<hr>
-							<div class="row table-import" style="display: none;">
-								<div class="col-12"><h5>รายการทั้งหมด <b>11 รายการ</b></h5></div>
-								<div class="col-12"><h5 class="text-success">สำเร็จ <b>11 รายการ</b></h5></div>
-								<div class="col-12"><h5 class="text-danger">ไม่สำเร็จ <b>0 รายการ</b></h5></div> 
-							</div>
-							<table class="table table-bordered table-import" style="display: none;">
-								<thead>
-									<tr>
-										<th class="bg-danger text-white">#</th>
-										<th class="bg-danger text-white">รหัสนักศึกษา</th>
-										<th class="bg-danger text-white">ชื่อผู้สมัคร</th>
-										<th class="bg-danger text-white">เลขที่ผู้สมัคร</th>
-										<th class="bg-danger text-white">จำนวนเงิน</th>
-										<th class="bg-danger text-white">วันที่จ่าย </th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>8</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>9</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>10</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-									<tr>
-										<td>11</td>
-										<td>64039398012</td>
-										<td>สมใจ มาดี</td>
-										<td>00008271</td>
-										<td>5,000</td>
-										<td>20/01/2566	</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="col text-center table-import" style="display: none;">
-								<button class="btn btn-primary"> <i class="far fa-check-circle"></i> ยืนยันข้อมูล</button>
-							</div>
-
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-
+  
 
 
         <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/vendors.bundle.js?v=0.0.06"></script>
@@ -654,6 +475,31 @@
 			$('.file-import').click(function(){       
 				$(".table-import").show("");  
 			}); 
+
+
+			$('#select1').on('change', function() {
+				if(this.value == 1){ 
+					$(".list-name").hide();  
+					$(".list-name1").show();  
+				}
+				else if(this.value == 2){ 
+					$(".list-name").hide();  
+					$(".list-name2").show();  
+				}
+			});
+
+			 
+			$('.custom-control-input').change(function() {
+				if(this.checked) {
+					$("."+this.id).show();  
+				}
+				else{
+					$("."+this.id).hide();   
+				}
+			});
+		
+
+
 		</script>
 
     </body>

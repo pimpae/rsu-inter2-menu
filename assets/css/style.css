@@ -327,3 +327,38 @@ body{
 }
 
 
+/* ########################################################################### เปรียบเทียบประวัติบุคลากร */
+
+.list-name{ 
+  height: calc(100vh - 320px);
+  border: 1px solid #5e6371;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 20px 10px;
+}
+.profile-box{  
+  border: 1px solid #fd3995;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.profile-box img{  
+  height: 150px;
+  max-width: 100%;
+  display: none;
+  margin: 10px auto; 
+}
+.profile-box ul{  
+  padding-left: 10px;
+  list-style: none;
+}
+.profile-box ul li{  
+  font-size: 13px;
+}
+.profile-box ol{  
+  padding-left: 20px; 
+}
+.profile-box ol li{  
+  font-size: 13px;
+}

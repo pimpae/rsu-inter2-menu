@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>RSU มหาวิทยาลัยรังสิต</title>
+        <meta name="description" content="Privacy">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="msapplication-tap-highlight" content="no">
+        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/vendors.bundle.css?v=0.0.06">
+        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/app.bundle.css?v=0.0.06">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/apple-touch-icon.png?v=0.0.06">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/favicon-32x32.png?v=0.0.06">
+        <link rel="mask-icon" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/safari-pinned-tab.svg?v=0.0.06" color="#5bbad5">
+        <link id="mytheme" rel="stylesheet" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/themes/cust-theme-7.css?v=0.0.06">
+        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/notifications/sweetalert2/sweetalert2.bundle.css?v=0.0.06">
+        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/notifications/toastr/toastr.css?v=0.0.06"> 
+        <link rel="stylesheet" href="https://demo.aesystem.co.th/rsu_inter2/assets/js/validationEngine/validationEngine.jquery.css?v=0.0.06" type="text/css"/>
+        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/formplugins/dropzone/dropzone.css">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>   
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet"/>   
+		<style>
+			body{  
+				font-family: Sarabun;   
+				font-size: 16px;
+			} 
+			.js-nav-built li ul{  
+				display: none;
+			} 
+			.js-nav-built li.active ul{  
+				display: block;
+			} 
+			.nav-link-text{
+				font-size: 16px;
+			}
+			.form-control{
+				font-size: 14px;
+			}
+		</style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="page-inner">
+                <aside class="page-sidebar">
+                    <div class="page-logo p-0"  >
+                        <a href="https://demo.aesystem.co.th/rsu_inter2" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
+                        <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/logo.png" alt="App" aria-roledescription="logo">
+                        <span class="page-logo-text mr-1">RSU มหาวิทยาลัยรังสิต</span>
+                        <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
+                        </a>
+                    </div>
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+                        <nav id="js-primary-nav" class="primary-nav js-list-filter" role="navigation" style="overflow: hidden; width: auto; height: 100%;">
+                            <div class="info-card">
+                                <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/demo/avatars/avatar-m.png" class="profile-image rounded-circle" alt="admin">
+                                <div class="info-card-text">
+                                    <a href="#" class="d-flex align-items-center text-white">
+                                    <span class="text-truncate text-truncate-sm d-inline-block">
+                                    admin test
+                                    </span>
+                                    </a>
+                                    <span class="fs-lg  d-inline-block text-truncate text-truncate-sm"> เจ้าหน้าที่ระบบ </span>
+                                </div>
+                                <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/card-backgrounds/cover-1-lg.png" class="cover" alt="cover">
+                            </div>
+                            <ul id="js-nav-menu" class="nav-menu js-nav-built">      
+                                <li>
+                                    <a href="#">
+										<i class="far fa-user-graduate"></i>
+										<span class="nav-link-text">นักศึกษา</span>
+										<b class="collapse-sign">
+											<em class="fal fa-angle-up"></em>
+										</b>
+									</a>
+                                    <ul>
+                                        <li><a href="#" ><span class="nav-link-text">นักศึกษา Fulltime</span></a></li>
+                                        <li><a href="#" ><span class="nav-link-text">นักศึกษาแลกเปลี่ยน Outbound</span></a></li>
+                                        <li><a href="#" ><span class="nav-link-text">นักศึกษา Exchange</span></a></li> 
+                                    </ul>
+                                </li>      
+                                <li class="active">
+                                    <a href="#">
+										<i class="far fa-users"></i>
+										<span class="nav-link-text">Agency</span>
+										<b class="collapse-sign">
+											<em class="fal fa-angle-up"></em></b>
+										</a>
+                                    <ul>
+                                        <li><a href="#" ><span class="nav-link-text">Agency List</span></a></li> 
+                                        <li class="active"><a href="#" ><span class="nav-link-text">Agency Performents</span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Agency Report</span></a></li>
+                                        <li><a href="#" ><span class="nav-link-text">Agency Payment</span></a></li> 
+                                    </ul>
+                                </li>  
+                                <li>
+                                    <a href="#">
+										<i class="far fa-clinic-medical"></i>
+										<span class="nav-link-text">Insurance management</span>
+										<b class="collapse-sign">
+											<em class="fal fa-angle-up"></em>
+										</b>
+									</a>
+                                    <ul>
+                                        <li><a href="#" ><span class="nav-link-text">Import data </span></a></li>
+                                        <li><a href="#" ><span class="nav-link-text">Manage Insurance Policy number </span></a></li> 
+                                    </ul>
+                                </li>  
+                                <li>
+                                    <a href="#">
+										<i class="fal fa-file-alt"></i>
+										<span class="nav-link-text">การต่ออายุเอกสารนักศึกษา</span>
+										<b class="collapse-sign">
+											<em class="fal fa-angle-up"></em>
+										</b>
+									</a>
+                                    <ul>
+                                        <li><a href="#" ><span class="nav-link-text">Confirm Appointment </span></a></li>
+                                        <li><a href="#" ><span class="nav-link-text">Send Email To Student</span></a></li> 
+                                    </ul>
+                                </li> 
+                                <li>
+                                    <a href="#">
+										<i class="fal fa-cog"></i>
+										<span class="nav-link-text">กลุ่มเมนูตั้งค่า</span>
+										<b class="collapse-sign">
+											<em class="fal fa-angle-up"></em>
+										</b>
+									</a>
+                                    <ul>
+                                        <li><a href="#" ><span class="nav-link-text">Ranking Score and match study plan </span></a></li>
+                                        <li><a href="#" ><span class="nav-link-text">Hint message</span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Setting Pop up message at Support </span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Setup Tuition Fee </span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Setup Deposit </span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Setup Faculty </span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Deposit Package </span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">Setting Proforma invoice </span></a></li> 
+                                        <li><a href="#" ><span class="nav-link-text">ผู้ใช้งาน</span></a></li>  
+                                    </ul>
+                                </li>  
+
+								
+                            </ul>
+                            <div class="filter-message js-filter-message bg-success-600"></div>
+                        </nav>
+                        <div class="slimScrollBar" style="background: rgb(255, 255, 255); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 4px; height: 53.5124px;"></div>
+                        <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 4px;"></div>
+                    </div>
+                </aside>
+                <div class="page-content-wrapper">
+                    <header class="page-header" role="banner">
+                        <div class="page-logo">
+                            <a href="https://demo.aesystem.co.th/rsu_inter2" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
+                            <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/rj_logo.png" alt="WebApp" aria-roledescription="logo">
+                            <span class="page-logo-text mr-1">RSU มหาวิทยาลัยรังสิต</span>
+                            <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
+                            </a>
+                        </div>
+                        <div class="hidden-md-down dropdown-icon-menu position-relative">
+                        </div>
+                        <div class="hidden-lg-up">
+                            <a href="#" class="header-btn btn press-scale-down waves-effect waves-themed" data-action="toggle" data-class="mobile-nav-on">
+                            <i class="ni ni-menu"></i>
+                            </a>
+                        </div>
+                        <div class="ml-auto d-flex">
+                            <div>
+                                <a href="#" class="header-icon color-primary-50">
+                                </a>
+                            </div> 
+                        </div>
+                    </header>
+                    <main id="js-page-content" role="main" class="page-content  p-0">
+						<div class="container-fluid p-5"  >
+							<div class="row">
+								<div class="col-lg-12">
+									<h1> <i class="far fa-file-alt"></i> Agency Performents</h1>
+									<hr class="border-bottom">
+
+									<form>
+										<div class="form-group row mb-0"> 
+											<div class="col">
+												<label for="">ปีการศึกษา</label>
+												<select name="" id="" class="form-control">
+													<option value="">ทั้งหมด</option>
+													<option value="">2566</option>
+													<option value="">2565</option>
+													<option value="">2564</option>
+													<option value="">2564</option>
+												</select>
+											</div>
+											<div class="col">
+												<label for="">ภาคการศึกษา</label>
+												<select name="" id="" class="form-control">
+													<option value="">ทั้งหมด</option>
+													<option value="">1</option>
+													<option value="">2</option>
+													<option value="">3</option>
+													<option value="">Summer</option>
+												</select>
+											</div>
+											<div class="col">
+												<label for="">คณะ</label>
+												<select name="" id="" class="form-control">
+													<option value="">ทั้งหมด</option>
+													<option value="">คณะวิทยาศาสตร์</option>
+													<option value="">คณะวิทยาศาสตร์</option>
+													<option value="">คณะวิทยาศาสตร์</option>
+													<option value="">คณะวิทยาศาสตร์</option>
+												</select>
+											</div>
+											<div class="col">
+												<label for="">วันที่</label>
+												<input type="text" class="form-control" placeholder="ตั้งแต่วันที่">
+											</div>
+											<div class="col">
+												<label for="">ถึง</label>
+												<input type="text" class="form-control" placeholder="ถึงวันที่">
+											</div>
+											<div class="col">
+												<label for="">รหัส/ชื่อนามสกุล</label>
+												<input type="text" class="form-control" placeholder="รหัส/ชื่อนามสกุล">
+											</div>
+											<div class="col">
+												<label for="">สถานะ</label>
+												<select name="" id="" class="form-control">
+													<option value="">ทั้งหมด</option>
+													<option value="">จ่ายเงินแล้ว</option>
+													<option value="">รอจ่ายเงิน</option> 
+												</select>
+											</div>
+											<div class="col pt-2">   
+												<br> 
+												<button class="btn btn-primary btn-sm  mr-1"  type="button"  >
+													<i class="far fa-search"></i>  
+												</button>    
+											</div>  
+										</div>
+										<div class="form-group row">  
+											<div class="col  ">   
+												<br> 
+												<button class="btn btn-outline-danger btn-sm mr-1"  type="button" title="Generate PDF">
+													<i class="far fa-file-pdf"></i> <span>Report PDF</span>
+												</button>   
+												<button class="btn btn-outline-success btn-sm mr-1"  type="button" title="Generate PDF">
+													<i class="far fa-file-excel"></i> <span>Report Excel</span>
+												</button>   
+												<button class="btn btn-outline-info btn-sm mr-1"  type="button" title="Generate PDF">
+													<i class="far fa-print"></i> <span>Print</span>
+												</button>  
+												<a href="#" class="btn btn-info btn-sm mr-1" data-toggle="modal" data-target="#myModal"><i class="far fa-file-import"></i> นำเข้า Payment</a>
+											</div>  
+										</div>
+									</form>
+		
+									<hr class="border-bottom">
+									
+			 
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									
+									<div class="table-responsive">
+										<table class="table table-bordered" style="background-color: #fff;">
+											<thead>
+												<tr>
+													<th class="bg-danger text-white">#</th>
+													<th class="bg-danger text-white">รหัสนักศึกษา</th>
+													<th class="bg-danger text-white">ชื่อ-สกุล นักศึกษา</th>
+													<th class="bg-danger text-white text-center">วันที่สมัคร</th>
+													<th class="bg-danger text-white">เลขที่ผู้สม้คร</th>
+													<th class="bg-danger text-white">คณะ</th>
+													<th class="bg-danger text-white">ปีการศึกษา</th>
+													<th class="bg-danger text-white">ภาคการศึกษา</th>
+													<th class="bg-danger text-white">ชื่อ Agency </th>
+													<th class="bg-danger text-white">คอมมิชชั่น</th>
+													<th class="bg-danger text-white text-center">วันที่จ่าย</th>
+													<th class="bg-danger text-white text-center">Payment Status</th> 
+													<th class="bg-danger text-white text-center">
+														<i class="fal fa-file-alt"></i>
+													</th> 
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>2</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>3</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-danger text-center">รอจ่ายเงิน</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>4</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-danger text-center">รอจ่ายเงิน</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>5</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>6</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>7</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>8</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>9</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+												<tr>
+													<td>10</td>
+													<td>64039398012</td>
+													<td>สมใจ มาดี</td>
+													<td class="text-center">20/01/2566</td>
+													<td>00008271</td>
+													<td>วิทยาศาสตร์</td>
+													<td>2566</td>
+													<td>1</td>
+													<td>เอกชัย วงศ์ศรี</td>
+													<td>10,000.00</td>
+													<td class="text-center">20/01/2566</td>
+													<td class="text-success text-center">จ่ายเงินแล้ว</td>
+													<td class="text-center">
+														<a href="#" class="btn btn-info btn-sm ">
+															<i class="fal fa-file-alt"></i>
+														</a>
+													</td> 
+												</tr> 
+											</tbody>
+										</table>
+									</div>
+		
+								</div>
+							</div>
+						</div>
+                    </main> 
+                </div>
+            </div>
+        </div>
+ 
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog modal-dialog-centered modal-xl">
+				<div class="modal-content"> 
+					<div class="modal-header">
+						<h4 class="modal-title"><i class="far fa-file-import"></i>  นำเข้า Payment</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div> 
+					<div class="modal-body">
+						<div class="col border p-4">
+							<div class="row">
+								<div class="col">
+									<h4><b>ดาวน์โหลด Template :  </b>
+										<button class="btn btn-outline-success btn-sm mr-1"  type="button" title="Generate PDF">
+											<i class="far fa-file-excel"></i><span> Excel Template</span>
+										</button> 
+									</h4>
+								</div>
+								<div class="col">
+									<h4><b>นำเข้า Payment :  </b>
+										<button class="btn btn-danger btn-sm mr-1 file-import"  type="button" title="Generate PDF">
+											<i class="far fa-file-import"></i> นำเข้า Excel </span>
+										</button> 
+									</h4>
+								</div>
+							</div>
+							<hr>
+							<div class="row table-import" style="display: none;">
+								<div class="col-12"><h5>รายการทั้งหมด <b>11 รายการ</b></h5></div>
+								<div class="col-12"><h5 class="text-success">สำเร็จ <b>11 รายการ</b></h5></div>
+								<div class="col-12"><h5 class="text-danger">ไม่สำเร็จ <b>0 รายการ</b></h5></div> 
+							</div>
+							<table class="table table-bordered table-import" style="display: none;">
+								<thead>
+									<tr>
+										<th class="bg-danger text-white">#</th>
+										<th class="bg-danger text-white">รหัสนักศึกษา</th>
+										<th class="bg-danger text-white">ชื่อผู้สมัคร</th>
+										<th class="bg-danger text-white">เลขที่ผู้สมัคร</th>
+										<th class="bg-danger text-white">จำนวนเงิน</th>
+										<th class="bg-danger text-white">วันที่จ่าย </th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>7</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>9</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>10</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+									<tr>
+										<td>11</td>
+										<td>64039398012</td>
+										<td>สมใจ มาดี</td>
+										<td>00008271</td>
+										<td>5,000</td>
+										<td>20/01/2566	</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="col text-center table-import" style="display: none;">
+								<button class="btn btn-primary"> <i class="far fa-check-circle"></i> ยืนยันข้อมูล</button>
+							</div>
+
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+
+
+
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/vendors.bundle.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/validationEngine/jquery.validationEngine-th.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/validationEngine/jquery.validationEngine.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/iframeResizer.min.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/app.bundle.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/app.noti.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/notifications/sweetalert2/sweetalert2.bundle.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/notifications/toastr/toastr.js?v=0.0.06"></script>
+        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/formplugins/dropzone/dropzone.js"></script>
+		
+		<script>
+			
+
+			$('#js-nav-menu li').click(function(){       
+				$(this).toggleClass("open");       
+				$(this).toggleClass("active"); 
+				$(this + " ul").toggleClass("active"); 
+			}); 
+			$('.file-import').click(function(){       
+				$(".table-import").show("");  
+			}); 
+		</script>
+
+    </body>
+</html>
