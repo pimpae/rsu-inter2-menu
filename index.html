@@ -1,504 +1,334 @@
 <!DOCTYPE html>
 <html>
-    <head>
+    <head> 
         <meta charset="utf-8">
-        <title>RSU มหาวิทยาลัยรังสิต</title>
-        <meta name="description" content="Privacy">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, minimal-ui">
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="msapplication-tap-highlight" content="no">
-        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/vendors.bundle.css?v=0.0.06">
-        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/app.bundle.css?v=0.0.06">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/apple-touch-icon.png?v=0.0.06">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/favicon-32x32.png?v=0.0.06">
-        <link rel="mask-icon" href="https://demo.aesystem.co.th/rsu_inter2/assets/img/favicon/safari-pinned-tab.svg?v=0.0.06" color="#5bbad5">
-        <link id="mytheme" rel="stylesheet" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/themes/cust-theme-7.css?v=0.0.06">
-        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/notifications/sweetalert2/sweetalert2.bundle.css?v=0.0.06">
-        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/notifications/toastr/toastr.css?v=0.0.06"> 
-        <link rel="stylesheet" href="https://demo.aesystem.co.th/rsu_inter2/assets/js/validationEngine/validationEngine.jquery.css?v=0.0.06" type="text/css"/>
-        <link rel="stylesheet" media="screen, print" href="https://demo.aesystem.co.th/rsu_inter2/assets/css/formplugins/dropzone/dropzone.css">
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>   
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>  เปรียบเทียบประวัติบุคลากร
+		</title> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>  
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">  
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>    
 		<link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet"/>   
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />      
-		<style>
-			body{  
-				font-family: Sarabun;   
-				font-size: 16px;
-			} 
-			.js-nav-built li ul{  
-				display: none;
-			} 
-			.js-nav-built li.active ul{  
-				display: block;
-			} 
-			.nav-link-text{
-				font-size: 14px;
-			}
-			.form-control{
-				font-size: 14px;
-			}
-		</style>
+		 
+ 
     </head>
     <body>
-        <div class="page-wrapper">
-            <div class="page-inner">
-                <aside class="page-sidebar">
-                    <div class="page-logo p-0"  >
-                        <a href="https://demo.aesystem.co.th/rsu_inter2" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                        <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/logo.png" alt="App" aria-roledescription="logo">
-                        <span class="page-logo-text mr-1">RSU มหาวิทยาลัยรังสิต</span>
-                        <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
-                        </a>
-                    </div>
-                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
-                        <nav id="js-primary-nav" class="primary-nav js-list-filter" role="navigation" style="overflow: hidden; width: auto; height: 100%;">
-                            <div class="info-card">
-                                <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/demo/avatars/avatar-m.png" class="profile-image rounded-circle" alt="admin">
-                                <div class="info-card-text">
-                                    <a href="#" class="d-flex align-items-center text-white">
-                                    <span class="text-truncate text-truncate-sm d-inline-block">
-                                    admin test
-                                    </span>
-                                    </a>
-                                    <span class="fs-lg  d-inline-block text-truncate text-truncate-sm"> เจ้าหน้าที่ระบบ </span>
-                                </div>
-                                <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/card-backgrounds/cover-1-lg.png" class="cover" alt="cover">
-                            </div>
-                            <ul id="js-nav-menu" class="nav-menu js-nav-built">       
-                                <li class="active">
-                                    <a href="#">
-										<i class="far fa-users"></i>
-										<span class="nav-link-text">ทะเบียนประวัติ</span>
-										<b class="collapse-sign">
-											<em class="fal fa-angle-up"></em></b>
-										</a>
-                                    <ul>
-                                        <li><a href="#" ><span class="nav-link-text">บันทึกทะเบียนประวัติ</span></a></li> 
-                                        <li class="active"><a href="#" ><span class="nav-link-text">เปรียบเทียบประวัติบุคลากร</span></a></li> 
-                                        <li><a href="#" ><span class="nav-link-text">ตั้งค่า</span></a></li> 
-                                    </ul>
-                                </li>    
+		
 
-								
-                            </ul>
-                            <div class="filter-message js-filter-message bg-success-600"></div>
-                        </nav>
-                        <div class="slimScrollBar" style="background: rgb(255, 255, 255); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 4px; height: 53.5124px;"></div>
-                        <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.4; z-index: 90; right: 4px;"></div>
-                    </div>
-                </aside>
-                <div class="page-content-wrapper">
-                    <header class="page-header" role="banner">
-                        <div class="page-logo">
-                            <a href="https://demo.aesystem.co.th/rsu_inter2" class="page-logo-link press-scale-down d-flex align-items-center position-relative">
-                            <img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/rj_logo.png" alt="WebApp" aria-roledescription="logo">
-                            <span class="page-logo-text mr-1">RSU มหาวิทยาลัยรังสิต</span>
-                            <span class="position-absolute text-white opacity-50 small pos-top pos-right mr-2 mt-n2"></span>
-                            </a>
-                        </div>
-                        <div class="hidden-md-down dropdown-icon-menu position-relative">
-                        </div>
-                        <div class="hidden-lg-up">
-                            <a href="#" class="header-btn btn press-scale-down waves-effect waves-themed" data-action="toggle" data-class="mobile-nav-on">
-                            <i class="ni ni-menu"></i>
-                            </a>
-                        </div>
-                        <div class="ml-auto d-flex">
-                            <div>
-                                <a href="#" class="header-icon color-primary-50">
-                                </a>
-                            </div> 
-                        </div>
-                    </header>
-                    <main id="js-page-content" role="main" class="page-content  p-0">
-						<div class="container-fluid p-5"  >
-							<div class="row">
-								<div class="col-lg-12">
-									<h1> <i class="far fa-users"></i> เปรียบเทียบประวัติบุคลากร</h1>
-									<hr class="border-bottom"> 
-									<form>
-										<div class="form-group row mb-0"> 
-											<div class="col-lg-2">
-												<label for="">บุคลากร </label>
-												<select name="" id="select1" class="form-control"> 
-													<option value="1">อัยการ 1</option>
-													<option value="2">อัยการ 2</option>
-													<option value="3">อัยการ 3</option>
-													<option value="4">อัยการ 4</option>
-													<option value="5">อัยการ 5</option> 
-													<option value="6">อัยการ 6</option> 
-												</select> 
-											</div> 
-										</div> 
-									</form> 
-									<hr class="border-bottom"> 
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-2"> 
-									<div class="list-name list-name1" style="display: none;">
-										<h4></h4><b>รายชื่อบุคลากร</b></h4>
-										<br>
-										<small>(เลือกได้สูงสุด 6 คน)</small>
-										<br><br>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name1">
-											<label class="custom-control-label" for="name1">กรรณณิกา ผลเจริญ	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name2">
-											<label class="custom-control-label" for="name2">คำนวณ วิสุทธิพิเนตร	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name3">
-											<label class="custom-control-label" for="name3">เชาว์ เต็มรักษ์	</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name4">
-											<label class="custom-control-label" for="name4">ทองใหม่ ทองสุก	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name5">
-											<label class="custom-control-label" for="name5">ปวิชยงค์ ทรงเหลี่ยม	</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name6">
-											<label class="custom-control-label" for="name6">วิมลวัลย์ วโรฬาร	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name7">
-											<label class="custom-control-label" for="name7">สุทิศา สุทิศา 	</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name8">
-											<label class="custom-control-label" for="name8">อดิศร ศรีสุธรรม</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name9">
-											<label class="custom-control-label" for="name9">อุมาพร แก้วสุข	
-											</label>
-										</div> 
-									</div>
-									<div class="list-name list-name2" style="display: none;">
-										<h4></h4><b>รายชื่อบุคลากร</b></h4>
-										<br>
-										<small>(เลือกได้สูงสุด 6 คน)</small>
-										<br><br>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name21">
-											<label class="custom-control-label" for="name21">กรรณณิกา ผลเจริญ	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name22">
-											<label class="custom-control-label" for="name22">คำนวณ วิสุทธิพิเนตร	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name23">
-											<label class="custom-control-label" for="name23">เชาว์ เต็มรักษ์	</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name24">
-											<label class="custom-control-label" for="name24">ทองใหม่ ทองสุก	
-											</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name25">
-											<label class="custom-control-label" for="name25">ปวิชยงค์ ทรงเหลี่ยม	</label>
-										</div>
-										<div class="custom-control custom-checkbox my-1 mr-sm-2">
-											<input type="checkbox" class="custom-control-input" id="name26">
-											<label class="custom-control-label" for="name26">วิมลวัลย์ วโรฬาร	
-											</label>
-										</div> 
+		<div class="menu-start">
+			<div class="logo-menu">
+				<img src="https://demo.aesystem.co.th/rsu_inter2/assets/img/logo.png" alt="logo" class="img-fluid">
+			</div> 
+			<ul>
+				<li>
+					<a href="#">
+						<span class="material-symbols-outlined">
+						person_book
+						</span> 
+						บันทึกทะเบียนประวัติ
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">
+						<span class="material-symbols-outlined">
+						difference
+						</span>
+						เปรียบเทียบประวัติบุคลากร
+					</a> 
+				</li>
+				<li>
+					<a href="#">
+						<span class="material-symbols-outlined">
+						settings
+						</span>
+						การตั้งค่า
+					</a> 
+				</li>
+			</ul>
+		</div>
+
+		<main>
+			<div class="main">
+				<div class="container-fluid"> 
+					<div class="row">
+						<div class="col-lg-12">
+							<h5> <i class="far fa-users"></i> เปรียบเทียบประวัติบุคลากร</h5>
+							<hr class="border-bottom">  
+		
+							<form>
+								<div class="form-group row mb-0"> 
+									<div class="col-lg-2">
+										<label for="">เลือกขั้น </label>  
+										<select class="selectpicker" title="เลือกขั้น" data-live-search="true" >
+											<option value="0" selected disabled>เลือกขั้น</option>
+											<option value="1" selected>อัยการ 1</option>
+											<option value="2">อัยการ 2</option>
+											<option value="3">อัยการ 3</option>
+											<option value="4">อัยการ 4</option>
+											<option value="5">อัยการ 5</option>  
+										</select> 
 									</div> 
-								</div>
-								<div class="col-lg-10">
-									<div class="row">
-										<div class="col name1" style="display: none;">
-											<div class="profile-box" >
-												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
-												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
-												<h6>
-													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
-												</h6>
-												<h6>
-													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
-												</h6>
-												<h6>
-													<b>รหัสบุคลากร :</b> 4707068
-												</h6>
-												<h6>
-													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
-												</h6> 
-												<h5> <b>ประวัติการศึกษา</b> </h5>  
-												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
-												<ol>
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
-												</ol> 
-												<div class="row">
-													<div class="col">
-														<button class="btn btn-x btn-block active">เลือก</button>
-													</div>
-													<div class="col">
-														<button class="btn btn-x btn-block">ยกเลิก</button>
-													</div>
-												</div>
-											</div>
-										</div> 
-										<div class="col name2" style="display: none;">
-											<div class="profile-box">
-												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
-												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
-												<h6>
-													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
-												</h6>
-												<h6>
-													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
-												</h6>
-												<h6>
-													<b>รหัสบุคลากร :</b> 4707068
-												</h6>
-												<h6>
-													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
-												</h6> 
-												<h5> <b>ประวัติการศึกษา</b> </h5>  
-												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
-												<ol>
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
-												</ol> 
-												<div class="row">
-													<div class="col">
-														<button class="btn btn-x btn-block active">เลือก</button>
-													</div>
-													<div class="col">
-														<button class="btn btn-x btn-block">ยกเลิก</button>
-													</div>
-												</div>
-											</div>
-										</div> 
-										<div class="col name3" style="display: none;">
-											<div class="profile-box">
-												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
-												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
-												<h6>
-													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
-												</h6>
-												<h6>
-													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
-												</h6>
-												<h6>
-													<b>รหัสบุคลากร :</b> 4707068
-												</h6>
-												<h6>
-													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
-												</h6> 
-												<h5> <b>ประวัติการศึกษา</b> </h5>  
-												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
-												<ol>
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
-												</ol> 
-												<div class="row">
-													<div class="col">
-														<button class="btn btn-x btn-block active">เลือก</button>
-													</div>
-													<div class="col">
-														<button class="btn btn-x btn-block">ยกเลิก</button>
-													</div>
-												</div>
-											</div>
-										</div> 
-										<div class="col name4" style="display: none;">
-											<div class="profile-box">
-												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
-												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
-												<h6>
-													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
-												</h6>
-												<h6>
-													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
-												</h6>
-												<h6>
-													<b>รหัสบุคลากร :</b> 4707068
-												</h6>
-												<h6>
-													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
-												</h6> 
-												<h5> <b>ประวัติการศึกษา</b> </h5>  
-												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
-												<ol>
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
-												</ol> 
-												<div class="row">
-													<div class="col">
-														<button class="btn btn-x btn-block active">เลือก</button>
-													</div>
-													<div class="col">
-														<button class="btn btn-x btn-block">ยกเลิก</button>
-													</div>
-												</div>
-											</div>
-										</div> 
-										<div class="col name5" style="display: none;">
-											<div class="profile-box">
-												<h4><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h4>
-												<img src="assets/images/1688027146387.jpg" alt="images" class="img">
-												<h6>
-													<b>ตำแหน่งงาน :</b> อาจารย์ประจำ
-												</h6>
-												<h6>
-													<b>สาขาวิชา  :</b>  กายวิภาคศาสตร์ (Anatomy)
-												</h6>
-												<h6>
-													<b>รหัสบุคลากร :</b> 4707068
-												</h6>
-												<h6>
-													<b>วันที่เริ่มปฏิบัติงาน :</b> 28/06/2566
-												</h6> 
-												<h5> <b>ประวัติการศึกษา</b> </h5>  
-												<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาโท </b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
-												<ul>
-													<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
-												</ul>
-												<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
-												<ol>
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
-													<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
-												</ol> 
-												<div class="row">
-													<div class="col">
-														<button class="btn btn-x btn-block active">เลือก</button>
-													</div>
-													<div class="col">
-														<button class="btn btn-x btn-block">ยกเลิก</button>
-													</div>
-												</div>
-											</div>
-										</div> 
+									<div class="col-lg-10">
+										<label for="">ค้นหาจากชื่อ </label>
+										<select class="selectpicker" id="namehr" title="ค้นหาจากชื่อ" data-live-search="true" multiple  > 
+											<option value="1">กรรณณิกา ผลเจริญ</option> 
+											<option value="2">คำนวณ วิสุทธิพิเนตร</option>  
+											<option value="3">เชาว์ เต็มรักษ์</option>  
+											<option value="4">ทองใหม่ ทองสุก</option>  
+											<option value="5">ปวิชยงค์ ทรงเหลี่ยม</option>  
+											<option value="6">วิมลวัลย์ วโรฬาร</option>  
+											<option value="8">สุทิศา สุทิศา </option>  
+											<option value="9">อดิศร ศรีสุธรรม</option>  
+											<option value="10">อุมาพร แก้วสุข	</option>   
+										</select> 
 									</div>
-								</div>
+								</div> 
+							</form> 
+							<hr class="border-bottom"> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-2"> 
+							<div class="list-name list-name1">
+								<h4></h4><b>รายชื่อที่เลือกไว้ </b></h4> 
+								<br><br> 
+								<ol class="name-select">
+									<li>กรรณณิกา ผลเจริญ</li> 
+									<li>คำนวณ วิสุทธิพิเนตร</li> 
+									<li>เชาว์ เต็มรักษ์</li> 
+									<li>ทองใหม่ ทองสุก</li> 
+								</ol>
+								<button class="btn btn-x btn-sm btn-block active">
+									<span class="material-symbols-outlined">
+									print
+									</span> พิมพ์ โปรไฟล์
+								</button>
+								<button class="btn btn-x btn-sm btn-block unset">ยกเลิกทั้งหมด</button>
+							</div> 
+						</div>
+						<div class="col-lg-10">
+							<div class="row">
+								<div class="col-3">
+									<div class="profile-box" >
+										<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+										<h5><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h5>
+										<h6>
+											<b>ขั้น :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>ตำแหน่ง :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>อายุงาน   :</b>  10 ปี 3 เดือน 10 วัน
+										</h6>  
+										<h6> <b>วุฒิการศึกษา</b> </h6>  
+										<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+										<ol>
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+										</ol> 
+										<div class="row">
+											<div class="col">
+												<button class="btn btn-x btn-block active">เลือก</button>
+											</div>
+											<div class="col">
+												<button class="btn btn-x btn-block">ยกเลิก</button>
+											</div>
+										</div>
+									</div>
+								</div>  
+								<div class="col-3">
+									<div class="profile-box" >
+										<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+										<h5><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h5>
+										<h6>
+											<b>ขั้น :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>ตำแหน่ง :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>อายุงาน   :</b>  10 ปี 3 เดือน 10 วัน
+										</h6>  
+										<h6> <b>วุฒิการศึกษา</b> </h6>  
+										<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+										<ol>
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+										</ol> 
+										<div class="row">
+											<div class="col">
+												<button class="btn btn-x btn-block active">เลือก</button>
+											</div>
+											<div class="col">
+												<button class="btn btn-x btn-block">ยกเลิก</button>
+											</div>
+										</div>
+									</div>
+								</div>  
+								<div class="col-3">
+									<div class="profile-box" >
+										<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+										<h5><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h5>
+										<h6>
+											<b>ขั้น :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>ตำแหน่ง :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>อายุงาน   :</b>  10 ปี 3 เดือน 10 วัน
+										</h6>  
+										<h6> <b>วุฒิการศึกษา</b> </h6>  
+										<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+										<ol>
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+										</ol> 
+										<div class="row">
+											<div class="col">
+												<button class="btn btn-x btn-block active">เลือก</button>
+											</div>
+											<div class="col">
+												<button class="btn btn-x btn-block">ยกเลิก</button>
+											</div>
+										</div>
+									</div>
+								</div>  
+								<div class="col-3">
+									<div class="profile-box" >
+										<img src="assets/images/1688027146387.jpg" alt="images" class="img">
+										<h5><b>สุทิศา ปลื้มปิติวิริยะเวช </b></h5>
+										<h6>
+											<b>ขั้น :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>ตำแหน่ง :</b> อัยการ 1
+										</h6>
+										<h6>
+											<b>อายุงาน   :</b>  10 ปี 3 เดือน 10 วัน
+										</h6>  
+										<h6> <b>วุฒิการศึกษา</b> </h6>  
+										<h6 class="pl-2"><b>ปริญญาตรี</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาโท </b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h6 class="pl-2"><b>ปริญญาเอก 	</b></h6>
+										<ul>
+											<li>มหาวิทยาลัยมหิดล คณะ : วิทยาศาสตรบัณฑิต (วท.บ.) สาขา : กายภาพบำบัด</li> 
+										</ul>
+										<h5> <b>ประวัติโทษทางวินัย </b> </h5>  
+										<ol>
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li> 
+											<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus odit </li>  
+										</ol> 
+										<div class="row">
+											<div class="col">
+												<button class="btn btn-x btn-block active">เลือก</button>
+											</div>
+											<div class="col">
+												<button class="btn btn-x btn-block">ยกเลิก</button>
+											</div>
+										</div>
+									</div>
+								</div>  
 							</div>
 						</div>
-                    </main> 
-                </div>
-            </div>
-        </div>
-  
+					</div>
 
+				</div>
+			</div>
 
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/vendors.bundle.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/validationEngine/jquery.validationEngine-th.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/validationEngine/jquery.validationEngine.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/iframeResizer.min.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/app.bundle.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/app.noti.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/notifications/sweetalert2/sweetalert2.bundle.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/notifications/toastr/toastr.js?v=0.0.06"></script>
-        <script src="https://demo.aesystem.co.th/rsu_inter2/assets/js/formplugins/dropzone/dropzone.js"></script>
+		</main>
+ 
+
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+	
+		 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script> 
 		
 		<script>
 			
-
-			$('#js-nav-menu li').click(function(){       
-				$(this).toggleClass("open");       
-				$(this).toggleClass("active"); 
-				$(this + " ul").toggleClass("active"); 
-			}); 
-			$('.file-import').click(function(){       
-				$(".table-import").show("");  
-			}); 
+			$('#namehr').selectpicker('val', [1,2,3,4]);
 
 
-			$('#select1').on('change', function() {
-				if(this.value == 1){ 
-					$(".list-name").hide();  
-					$(".list-name1").show();  
-				}
-				else if(this.value == 2){ 
-					$(".list-name").hide();  
-					$(".list-name2").show();  
-				}
-			});
+			// $(function() {
 
-			 
-			$('.custom-control-input').change(function() {
-				if(this.checked) {
-					$("."+this.id).show();  
-				}
-				else{
-					$("."+this.id).hide();   
-				}
-			});
-		
+			// 	$('#namehr').on('change', function(){
+			// 		var selected = [];   
+			// 		$(this).find("option:selected").each(function(key,value){ 
+			// 			selected.push(value.innerHTML); 
+			// 			$(".name1").show();   
+			// 		}); 
+			// 		$(".name-select").empty();    
+			// 		$.each((''+selected+'').split(','), function() {
+			// 			$('.name-select').append($('<li>').html($.trim(this)));
+			// 		});
+			// 	});
+				
+			// }); 
 
+			
+			// $('.name-select li').click(function(){    
+			// 	$(this).empty();
+			// }); 
+
+			// $('.unset').click(function(){    
+			// 	$(".name-select").empty();   
+			// 	$(".col-lg-10 .row .col-3").hide();   
+			// }); 
+ 
 
 		</script>
 
